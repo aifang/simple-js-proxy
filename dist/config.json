@@ -1,0 +1,30 @@
+{
+    //协议"https" |"http"
+    "protocol": "http",
+    //服务启动端口
+    "port": 4000,
+    //代理配置,参考https://www.npmjs.com/package/http-proxy-middleware
+    "proxy": {
+        "/xxx": {
+            "target": "http://www.example.org",
+            // "changeOrigin": true,
+            // "pathRewrite": {
+            //     "^/api": ""
+            // }
+        },
+        "/heron": {
+            "target": "http://www.example.org",
+            // "changeOrigin": true,
+            // "pathRewrite": {
+            //     "^/api": ""
+            // }
+        },
+        "/fsgmtc": {
+            "target": "http://www.example.org",
+            // "changeOrigin": true,
+            // "pathRewrite": {
+            //     "^/api": ""
+            // }
+        }
+    }
+}

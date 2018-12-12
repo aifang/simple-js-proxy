@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "express": "^4.16.4",
+    "fs": "^0.0.1-security",
+    "http-proxy-middleware": "^0.19.1",
+    "net": "^1.0.2",
+    "react-dev-utils": "^6.1.1",
+    "webpack": "^4.27.1"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.1.2"
+  }
+}
