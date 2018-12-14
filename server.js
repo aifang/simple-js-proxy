@@ -11,6 +11,7 @@ var protocol = config.protocol || "http"
 var port = config.port || 4000
 
 var app = express()
+app.use(express.static(config.siteDirectory))
 
 for (const key in config.proxy) {
     app.use(proxy(key, config.proxy[key]))
