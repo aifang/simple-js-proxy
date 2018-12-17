@@ -1,30 +1,20 @@
 {
     //-----------------------除proxy外，均为可选参数-----------------------------------
     //-----------------------静态网站启动-----------------------------------
-
     //协议"https" |"http"
     "protocol": "http",
     //服务启动端口
     "port": 4567,
-    //网站路径
-    "siteDirectory": "D:/Source code/GIT2018/Lark/Code/ghsoft-web/src/main/resources/static/modules/map",
+    //监听静态文件,刷新浏览器(socket.io提供支持)
+    "watch": true,
+    //网站路径,可多个文件夹同时使用
+    "siteDirectory": [
+        "D:/Source code/GIT2018/Lark/Code/ghsoft-web/src/main/resources/static/modules/map"
+    ],
+    // "siteDirectory": "D:/Source code/GIT2018/Lark/Code/ghsoft-web/src/main/resources/static/modules/map",
     //代理配置,参考https://www.npmjs.com/package/http-proxy-middleware
     "proxy": {
-        "/arcgis/rest": {
-            "target": "http://7.158.99.149:4567",
-            // "changeOrigin": true,
-            // "pathRewrite": {
-            //     "^/api": ""
-            // }
-        },
-        "/a/": {
-            "target": "http://7.158.99.149:4567",
-            // "changeOrigin": true,
-            // "pathRewrite": {
-            //     "^/api": ""
-            // }
-        },
-        "/": {
+        "/": { //本地没有的一律代理
             "target": "http://7.158.99.149:4567",
             // "changeOrigin": true,
             // "pathRewrite": {
