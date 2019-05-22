@@ -9,13 +9,15 @@
     "watch": true,
     //网站路径,可多个文件夹同时使用
     "siteDirectory": [
-        "D:/Source code/GIT2018/Lark/Code/ghsoft-web/src/main/resources/static/modules/map"
+        "E:/SOURCE CODE/GIT2018/BigData/Lark/Code/web/modules/map"
+        // "C:/Users/kid/Desktop/build_bak"
     ],
     // "siteDirectory": "D:/Source code/GIT2018/Lark/Code/ghsoft-web/src/main/resources/static/modules/map",
     //代理配置,参考https://www.npmjs.com/package/http-proxy-middleware
     "proxy": {
         "/": { //本地没有的一律代理
-            "target": "http://7.158.99.149:4567",
+            "target": "http://7.174.145.77:8084",
+            
             // "changeOrigin": true,
             // "pathRewrite": {
             //     "^/api": ""
